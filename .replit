@@ -1,0 +1,7 @@
+modules = ["python-3.12"]
+run = "./generate.ph"
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "./generate.ph"]
