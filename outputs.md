@@ -4,3 +4,7 @@
 
 # Python Install
 ![image](https://github.com/user-attachments/assets/f39b78c4-94a7-4ba0-92a4-4721f3de4b87)
+
+
+#Packages Install
+![image](https://github.com/user-attachments/assets/fa395cbb-285f-4dd5-8ace-9675c8f2bec5)
