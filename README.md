@@ -6,11 +6,16 @@ This repository provides a simple Python script for generating RSA tokens. These
 * Verifies signatures using the public key.
 * Creates a token by concatenating the message and signature.
 ## Installation
+
 1. **Clone the repository:**
-   ```bash
+
+    ```bash
    git clone https://github.com/your-username/rsa-token-generator.git
 Install dependencies:
-pip install rsa
+
+    ```
+    pip install rsa
+    ```
 Usage
 1. Generate Keys:
 
