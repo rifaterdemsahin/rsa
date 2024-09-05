@@ -10,27 +10,32 @@ This repository provides a simple Python script for generating RSA tokens. These
 1. **Clone the repository:**
 
     ```bash
-   git clone https://github.com/your-username/rsa-token-generator.git
+   git clone https://github.com/rifaterdemsahin/rsa.git
+    ```
 Install dependencies:
 
     ```
     pip install rsa
     ```
+    
 Usage
 1. Generate Keys:
-
+```
 from rsa import newkeys
 (publicKey, privateKey) = newkeys(1024)
+```
 2. Sign a Message:
-
+```
 from rsa import sign
 message = b"This is my secret message"
 signature = sign(message, privateKey, 'SHA-1')
+```
 3. Create a Token:
-
+```
 token = message + signature
+```
 4. Verify the Token:
-
+```
 from rsa import verify
 message = token[:len(message)]
 signature = token[len(message):]
@@ -39,30 +44,36 @@ try:
     print("Signature verified! Token is valid.")
 except:
     print("Signature verification failed! Token is invalid.")
+```
 Example:
-
+```
 from rsa import newkeys, sign, verify
+```
 # Generate keys
+```
 (publicKey, privateKey) = newkeys(1024)
+```
 # Sign a message
+```
 message = b"Hello, world!"
 signature = sign(message, privateKey, 'SHA-1')
+```
 # Create a token
+```
 token = message + signature
+```
 # Verify the token
+```
 try:
     verify(message, token[len(message):], publicKey)
     print("Token verified!")
 except:
     print("Token verification failed!")
+```
+
 Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-Contact
-[Your email address or other contact information]
 
 **Explanation:**
 * **Title:**  "RSA Token Generator" clearly describes the purpose of the repository.
