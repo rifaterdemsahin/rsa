@@ -22,3 +22,8 @@
 
 # Every run a different output
 ![image](https://github.com/user-attachments/assets/755f9645-35c5-481a-817c-e63ae161bbd9)
+
+
+# Second Run and Errors and how to run in replit
+![image](https://github.com/user-attachments/assets/b3bd5f4a-27ae-4ea4-a7f2-cba605b77b3a)
+
